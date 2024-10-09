@@ -1,10 +1,11 @@
 type Props ={
     title: string
     onClick: () => void
+    disabled?: boolean
 }
 
-export const Button = ({title, onClick}: Props) => {
+export const Button = ({title, onClick, disabled}: Props) => {
   return (
-    <button onClick={onClick}>{title}</button>
+    <button onClick={onClick} disabled={disabled}>{title}</button>
   )
 }
