@@ -1,11 +1,14 @@
-type Props ={
-    title: string
-    onClick: () => void
-    disabled?: boolean
-}
+import s from "./Button.module.css";
 
-export const Button = ({title, onClick, disabled}: Props) => {
+type Props = {
+  title: string;
+  onClick: () => void;
+};
+
+export const Button = ({ title, onClick }: Props) => {
   return (
-    <button onClick={onClick} disabled={disabled}>{title}</button>
-  )
-}
+    <button className={s.button} onClick={onClick}>
+      {title}
+    </button>
+  );
+};

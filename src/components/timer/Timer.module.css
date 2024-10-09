@@ -1,0 +1,12 @@
+.timer{
+    margin: 0 auto;
+    background-color: rgb(28, 28, 28);
+    height: 100%;
+    max-width: 700px;
+    color: azure;
+    font-size: 70px;
+    border-radius: 30px;
+    padding: 20px;
+
+}
+
